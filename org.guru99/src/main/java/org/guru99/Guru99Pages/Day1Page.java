@@ -20,11 +20,23 @@ String expectedPageTitle = "Home page";
 String expectedMobilePageTitle ="Mobile";
 String demoSiteTitle;
 
+private String baseUrl;
+public int scc = 0;
+
 public void goMobileSortName() {
 	LoggerClass.log("I", "Navigating to Mobile Page");
 	driver.findElement(linkMobileFirstPage).click();
 	Select sortMenu = new Select(driver.findElement(sortDropDown));
 	sortMenu.selectByVisibleText("Name");
+	
+
+    // Step 6. Verify all products are sorted by name
+	// this will take a screen shot of the manager's page after a successful login
+    /*scc = (scc+1);
+	File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+	String png = ("C:\\Guru99 eCommerce Live Project\\Day01_TestCase1\\Mobile Products are sorted" + scc + ".png");
+	FileUtils.copyFile(scrFile, new File(png));*/
+	
 	
 }//goMobileSortName
 	
@@ -47,6 +59,7 @@ public boolean validateMobilePageTitle(){
 	}
 	return result;
 } //validateHomePageTitle
+
 
 
 

@@ -7,7 +7,6 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import ord.guru99.Helper.HelperClass;
 
-
 public class Day1test  extends Day1Page{
 private static String appURL = "http://live.demoguru99.com/index.php/";
 HelperClass helperObj;
