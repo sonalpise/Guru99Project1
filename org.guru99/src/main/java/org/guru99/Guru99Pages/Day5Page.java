@@ -79,13 +79,13 @@ public class Day5Page extends BaseClass {
 		LoggerClass.log("I", "Start Creating New Account ");
 		driver.findElement(CreateAccount).click();
 		driver.findElement(Firstname).clear();	
-		driver.findElement(Firstname).sendKeys("AuMiracle121");
+		driver.findElement(Firstname).sendKeys("AuMiracle123");
 		driver.findElement(Middlename).clear();
 		driver.findElement(Middlename).sendKeys("J");
 		driver.findElement(Lastname).clear();
 		driver.findElement(Lastname).sendKeys("Sample");
 		driver.findElement(Emailid).clear();
-		driver.findElement(Emailid).sendKeys("TesterAu121@gmail.com");
+		driver.findElement(Emailid).sendKeys("TesterAu123@gmail.com");
 		driver.findElement(Password1).clear();
 		driver.findElement(Password1).sendKeys("Turbo123");
 		driver.findElement(PasswordConfirm).clear();
@@ -113,14 +113,14 @@ public class Day5Page extends BaseClass {
 	    Assert.assertEquals(accountSuccessMessage ,ActualRegisterMessage);
 		LoggerClass.log("I", "Verifying Register Message : PASSED " );
 		
-		// Go to TV
+		// Go to TV Link
 		driver.findElement(tvlink1).click();
 		
 		driver.findElement(AddtoWishlist).click();
 		
 		driver.findElement(SharewishList).click();
 		
-		driver.findElement(Emailidtextbox).sendKeys("TesterAu118@gmail.com");
+		driver.findElement(Emailidtextbox).sendKeys("TesterAu123@gmail.com");
 		
 		driver.findElement(Messagetextbox).sendKeys("This is Good Product Thought to Share wiht you.");
 		

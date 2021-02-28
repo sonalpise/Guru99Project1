@@ -2,9 +2,7 @@ package org.guru99test;
 import org.junit.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
 import ord.guru99.Helper.HelperClass;
-
 import org.guru99.Guru99Pages.Day5Page;
 
 public class Day5test extends Day5Page{
