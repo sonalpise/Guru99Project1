@@ -32,8 +32,8 @@ public class Day6Page extends BaseClass {
 	
 	// Billing page = http://live.demoguru99.com/index.php/checkout/onepage/
 	
-	 public String firstName = "BERRY";    // These testdata stuff will be placed    
-	 public String lastName = "BERRYSEVEN";  // in a TestData EXCEL file at some stage
+	 public String firstName = "MARRY";    // These testdata stuff will be placed    
+	 public String lastName = "STONE";  // in a TestData EXCEL file at some stage
 	  
 	By AccountLink  = By.xpath("//a[@class='skip-link skip-account']/span[@class='label' and 2]");
 	By Myaccountlink = By.xpath("//div[1]/ul[1]/li[@class='first' and 1]/a[1]");
@@ -73,7 +73,6 @@ public class Day6Page extends BaseClass {
 	By CheckMoneySelectAfterContinueBtn = By.xpath("//div[@id='payment-buttons-container']/button[@class='button' and 1]/span[1]/span[1]");
 	
 	
-	
 	By OrderNumber  = By.xpath("//div[@class='col-main']/p[1]/a[1]");
 	By OrderPlacedTitle = By.xpath("//div[@class='page-title']/h1[1]");
 	String OrderPlaceConfirmTitle  = "YOUR ORDER HAS BEEN RECEIVED.";
@@ -81,37 +80,6 @@ public class Day6Page extends BaseClass {
 	By PlaceOrderButton = By.xpath("//button[@class='button btn-checkout']");
 	
 
-
-	/*
-	 * 
-	 * driver.findElement(By.id("billing:firstname")).clear();
-	    driver.findElement(By.id("billing:firstname")).clear();
-	    driver.findElement(By.id("billing:firstname")).sendKeys(firstName); 
-	    driver.findElement(By.id("billing:lastname")).clear();
-	    driver.findElement(By.id("billing:lastname")).sendKeys(lastName); 
-	    driver.findElement(By.id("billing:company")).clear(); 
-	    
-	    driver.findElement(By.id("billing:street1")).clear();
-	    driver.findElement(By.id("billing:street1")).sendKeys("148 Crown Street"); 
-	    new Select(driver.findElement(By.xpath("//select[@id='billing:country_id']"))).selectByIndex(14);
-	    Thread.sleep(5000);	    
-	    driver.findElement(By.id("billing:city")).clear();	
-	    driver.findElement(By.id("billing:city")).sendKeys("Sydney"); 
-	    driver.findElement(By.id("billing:region")).clear();
-	    driver.findElement(By.id("billing:region")).sendKeys("New South Wales");
-	    driver.findElement(By.id("billing:postcode")).clear();
-	    driver.findElement(By.id("billing:postcode")).sendKeys("2000");
-	    driver.findElement(By.id("billing:telephone")).clear();
-	    driver.findElement(By.id("billing:telephone")).sendKeys("8850 6789"); 
-	    
-	    // check radio button to "Ship to different address" 
-        driver.findElement(By.id("billing:use_for_shipping_no")).click();
-        
-        Your order # is: 100013634.
-	 */
-
-	
-	
 	public void day6Logic() throws InterruptedException {
 		
 		
@@ -185,12 +153,10 @@ public class Day6Page extends BaseClass {
 		    	e.printStackTrace();	    	
 		    }
 	 
-	    
+
 	    // 11. Click PROCEED TO CHECKOUT                                                                       
 	    driver.findElement(By.xpath("//button[@title='Proceed to Checkout']")).click();
 	    Thread.sleep(3000);    
-	    
-	    
 	    
 	    //********************************************************************************************************
 	    //*
@@ -288,7 +254,6 @@ public class Day6Page extends BaseClass {
 	    	driver.switchTo().window(handle);
 	    	}  
 	    Thread.sleep(2000); 
-	    
 	    
 	    // 13. In Shipping Method, Click Continue   
 	    driver.findElement(By.xpath(".//*[@id='shipping-method-buttons-container']/button")).click(); 	
