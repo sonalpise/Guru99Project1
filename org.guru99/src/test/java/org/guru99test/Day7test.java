@@ -27,14 +27,10 @@ public class Day7test  extends Day7Page{
 			 helperObj = new HelperClass(driver, appURL);
 		} // beforeTest
 
-
 		@AfterClass
 		public void afterTest() {
 			shutDownDriver();
 		} // afterTest
 		
 		
-		
-		
-
 } //Day7test
