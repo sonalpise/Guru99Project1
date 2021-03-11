@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-02-28T20:40:45Z" name="Default suite" finished-at="2021-02-28T20:40:56Z" duration-ms="10633">
+  <suite started-at="2021-03-10T02:32:14Z" name="Default suite" finished-at="2021-03-10T02:32:35Z" duration-ms="20580">
     <groups>
     </groups>
-    <test started-at="2021-02-28T20:40:45Z" name="Default test" finished-at="2021-02-28T20:40:56Z" duration-ms="10633">
-      <class name="org.guru99test.Day7test">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:org.guru99test.Day7test@6e6f2380]" started-at="2021-02-28T20:40:45Z" name="beforeTest" finished-at="2021-02-28T20:40:50Z" duration-ms="4535" status="PASS">
+    <test started-at="2021-03-10T02:32:14Z" name="Default test" finished-at="2021-03-10T02:32:35Z" duration-ms="20580">
+      <class name="org.guru99test.Day9test">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:org.guru99test.Day9test@6e6f2380]" started-at="2021-03-10T02:32:14Z" name="beforeTest" finished-at="2021-03-10T02:32:29Z" duration-ms="14616" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="navigatetoMobile()[pri:1, instance:org.guru99test.Day7test@6e6f2380]" started-at="2021-02-28T20:40:50Z" name="navigatetoMobile" finished-at="2021-02-28T20:40:56Z" duration-ms="6082" status="PASS">
+        <test-method signature="navigatetoMobile()[pri:1, instance:org.guru99test.Day9test@6e6f2380]" started-at="2021-03-10T02:32:29Z" name="navigatetoMobile" finished-at="2021-03-10T02:32:35Z" duration-ms="5782" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigatetoMobile -->
-      </class> <!-- org.guru99test.Day7test -->
+      </class> <!-- org.guru99test.Day9test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
